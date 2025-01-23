@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHÚC MỪNG SINH NHẬT BÉ MY <3 CỤC VÀNG CỦA ANHHHHHH</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f0e68c, #f9f9b1);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d4d;
+            transform: rotate(-45deg);
+            margin: 20px;
+            box-shadow: 0 0 25px rgba(255, 77, 77, 0.7);
+            animation: pulse 1.5s infinite;
+            transition: transform 0.3s;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d4d;
+            border-radius: 50%;
+            box-shadow: 0 0 25px rgba(255, 77, 77, 0.7);
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        .cake {
+            position: relative;
+            width: 200px;
+            height: 120px;
+            background-color: #ffcc00;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 0 25px rgba(255, 204, 0, 0.7);
+            transition: transform 0.3s;
+        }
+
+        .cake:hover {
+            transform: translateY(-10px);
+        }
+
+        .cake::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 40px;
+            width: 120px;
+            height: 30px;
+            background-color: #ff6699;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 102, 153, 0.7);
+        }
+
+        .candle {
+            position: absolute;
+            width: 12px;
+            height: 40px;
+            background-color: #ffcc00;
+            left: 90px;
+            bottom: 120px;
+            border-radius: 6px;
+            animation: flicker 1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { height: 40px; background-color: #ffcc00; }
+            50% { height: 45px; background-color: #ff9900; }
+            100% { height: 40px; background-color: #ffcc00; }
+        }
+
+        .flame {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: orange;
+            border-radius: 50%;
+            left: 50%;
+            bottom: 100%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.9);
+            animation: flameFlicker 1s infinite alternate;
+        }
+
+        @keyframes flameFlicker {
+            0% { height: 12px; }
+            50% { height: 15px; }
+            100% { height: 12px; }
+        }
+
+        .message {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            font-size: 22px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .letter {
+            display: none;
+            position: absolute;
+            width: 400px; /* Tăng chiều rộng */
+            height: 300px; /* Tăng chiều cao */
+            background-color: #fff;
+            border: 2px solid #ff6699;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform 0.3s, opacity 0.3s;
+            opacity: 0;
+            overflow: auto; /* Thêm thanh cuộn nếu văn bản dài */
+        }
+
+        .letter.active {
+            display: block;
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .letter h2 {
+            margin: 0;
+            font-size: 20px; /* Có thể điều chỉnh kích thước chữ */
+            color: #ff6699;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <div class="cake" id="cake">
+        <div class="flame"></div>
+        <div class="candle"></div>
+        <div class="message">Chúc mừng sinh nhật</div>
+    </div>
+    <div class="letter" id="letter">
+        <h2 id="letterMessage">Chào cô bé của anhh. Hôm nay của 20 năm về trước là ngày một thiên thần nhỏ sinh ra đời, một cô bé đáng iu xinh xắn, dễ thương. Hành trình trưởng thành và lớn lên của bé và đến ngày hôm nay đều là những nỗ lực và sự cố gắng của bé, và còn là cái nhân duyên mà ông trời đã sắp đặt. Cảm ơn mẹ cha vì đã sinh ra một người đáng iu dễ thương, hiểu chuyện như em. Mặc dù anh đến với em hơi muộn nhưng chắc có lẽ đó cũng là do ông trời sắp đặt, một người có thể hoà hợp trong tính cách, đồng điệu trong mọi thứ thì chắc chắn sẽ cực kỳ khó. Cả anh và em đều còn nhiều khuyết điểm, nhưng em yên tâm, dù bất cứ chuyện gì xảy ra anh vẫn sẽ yêu em, bên cạnh em, anh có thể làm mọi thứ vì em, những điều mà em mong muốn. Anh biết là lời nói thì ai cũng có thể nói ra được nhưng sự chân thành là điều mà không có thể cảm nhận được, em cũng thấy điều đó mà đúng hong. Anh biết nhiều lúc anh hay ghen hay buồn hay khó chịu với em vì mấy chuyện này chuyện kia, nhưng mà anh cũng hong hiểu sao anh cảm thấy khó chịu như vậy nữa, anh không thể nói dối chính mình được, anh cũng lớn và biết điều nào sai đúng nhưng mà sao anh thấy anh ích kỷ quá, chắc là vì anh yêu em nhiều quá nhiều rùi, em đừng buồn đừng chán anh nha. Anh biết hôm nay là ngày đặc biệt của bé không nên bộc bạch mấy chuyện lắng động như này, nhưng mà anh muốn cho bé iu biết là anh yêu em nhiều lắmmm. Anh biết em suy nghĩ nhiều thứ nhưng mà bé iu đừng lo anh luôn ở bên cạnh bé, anh biết bé có thể tự lập và muốn làm tự lo cho chính mình được, nhưng mà bé hãy nhớ là luôn có một người luôn luôn bên cạnh bé bất cứ khi nào bé cần. Chúc bé iuuuu của anhhh của một tuổi mới thật hạnh phúc bên gia đình bên anh và bên những người thân iu. Chúc em sẽ có một tuổi mới thật rực rỡ hơnnnn, mọi việc điều suôn sẻ, may mắn và thành công hơnnn, ngày càng học thật giỏiii, càng mạnh mẽ hơnnn. Và đặc biệt là mãi mãiii bên cạnh anhhh, anh muốn cùng bé iuuu đón tất cả những ngày sinh nhật từ đây đến hết cuộc đời nàyyy. Dù sau này cả hai có bận rộn anh vẫn sẽ luôn luôn dành thời gian cho bé, 2 đứa đi làm về một cái bánh kem rồi đi dạo đi ăn thui cũng hạnh phúc nhấtttt rùiii.  Chúc mừng sinh nhật em bé của anh 🫶 Anh yêu emmm nhấttt trên đờiiiiiiiii ❤️</h2>
+    </div>
+
+    <script>
+        const cake = document.getElementById('cake');
+        const letter = document.getElementById('letter');
+
+        cake.addEventListener('click', () => {
+            letter.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
